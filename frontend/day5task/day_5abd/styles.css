@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#outter{
+
+height: 350vh;
+width: 100vw;
+background: black;
+}
+
+
+#main-container{
+    width: 100vw;
+    height: 100vh;
+    background:  url('https://www.cubeform.co.in/wp-content/uploads/2025/02/banner.jpg')  no-repeat center center/ cover;
+ 
+  
+}
+
+
+#main-container h1{
+    font-size: 3rem;
+    color: #ffffff;
+}
+
+#nav{
+
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav ul{
+ 
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    
+}
+
+#nav ul li a {
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+#content{
+    height: 90vh;
+    width: 100vw;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+#content h1, h3{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.g {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-top: 25px;
+    z-index: 1;
+}
+
+.g::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: 65px;
+    height: 65px;
+    border: 3px solid #000000;
+    border-radius: 50%;
+    box-sizing: border-box;
+    z-index: 0;
+    border-top-color: #465887;
+    animation: orbit 2s linear infinite;
+    
+}
+
+
+@keyframes orbit {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+ .buttons{
+    
+   
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    
+}
+
+
+
+#content-project{
+    width: 100vw;
+    padding: 2%;
+     background-color: rgb(0, 0, 0);
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#text{
+    width: 40%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+#text h1{
+    color: #ffffff;
+    font-size: 4rem;
+}
+#text p{
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#text h1,
+#text p {
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.slide-in-up {
+    animation: slideInUp 1s ease-out forwards;
+    opacity: 1;
+}
+
+#project-card{
+    width: 80%;
+    display: flex;
+     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    background-color: #000000;
+    
+    box-shadow: 0 4px 100px rgba(240, 239, 239, 0.1);
+    display: flex;
+    color: #ffffff;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+
+}
+
+.card img {
+    width: 100%;
+    height: 80%;
+    
+    object-fit: cover;
+}
+
+.next{
+    width: 100%;
+    height: 12rem;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#video{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     background-color: rgb(0, 0, 0);
+}
+
+.next #next_but,#previous_but{
+    width: 40px;
+    height: 40px;
+    margin: 0em 1.2em;
+    background-color: rgb(18 19 225);
+    color: rgb(242, 238, 238);
+    border: none;
+    border-radius: 50%;
+
+}
+
+#contact{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contact h1{
+    color: #ffffff;
+    font-size: 3rem;
+}
+
+#contact p{
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-align: center;
+}

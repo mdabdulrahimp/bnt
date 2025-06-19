@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif ;
+}
+
+/* Header For In-page Navigation */
+nav{
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: black;
+    background-color: azure ;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 2px 5px 5px 0px rgba(0,0,0,0.75);
+    z-index: 1  ;
+}
+
+h1{
+    font-size: 42px;
+}
+
+nav h1{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    font-size: 42px;
+    line-height: 2em;
+    white-space: nowrap;
+
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    list-style: none;
+    text-decoration: none;
+    justify-content: flex-end;
+    margin: 0px 20px;
+    gap: 40px;
+    width: 100%;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: inherit;
+    white-space: nowrap;
+}
+
+nav ul li a:hover{
+    color: rgb(80, 80, 80);
+}
+
+/* Navbar For Out-page Task Navigation */
+
+.buttons{
+    height: 2vh;
+    display: flex;
+    flex-direction: row;
+    background: white;
+    height: 20vh;
+    gap: 40px;
+    align-items: flex-start;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 2px 5px 5px 0px rgba(0,0,0,0.75);
+    align-items: center;
+    z-index: -2;
+}
+
+.buttons .btn{
+    display: flex;
+    padding: 15px;
+    border: none;
+    border-radius: 40px;
+    background-color: rgb(9, 9, 9);
+    color: white;
+    gap: 12px;
+    align-items: center; 
+}
+
+.buttons .btn i:first-child { margin-right: 8px; }
+.buttons .btn i:last-child { margin-left: 8px; }
+
+.buttons .btn:last-child {
+    margin-left: auto;
+}
+
+.buttons .btn:hover{
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Container */
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Positioning demo */
+
+#pt{
+    margin-top: 40px;
+    padding-top: 40px;
+    margin-bottom: 40px;
+    padding-bottom: 40px;    
+}
+
+#pt h1,p{
+    text-align: center;
+    line-height: 2em;
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+}
+
+.outter{
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px dashed black;
+    height: 45rem;
+    width: 40vw;
+    position: relative;
+    margin: 5em 10em;
+    justify-content: center;  
+}
+
+.inner{
+    border: 2px dashed rgb(87, 83, 83);
+    height: 25rem;
+    width: 25vw;
+    margin-left: 6em;
+    margin-top: 10em;
+}
+
+.absolute{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.relative{
+    position: relative;
+    top: 10px;
+    left: 100px;
+}
+
+.sticky{
+    position: sticky;
+    top:    0;
+    left: 0;
+}
+
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:-1 ;
+}
+
+
+#ps h1,p{
+    text-align: center;
+    line-height: 2em;
+}
+
+
+.outter_1{
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px dotted black;
+    height: 45rem;
+    width: 40vw;
+    position: relative; 
+    margin: 5em 10em;
+}
+
+.inner_1{
+    border: 2px solid rgb(87, 83, 83);
+    height: 25rem;
+    width: 25vw;
+    margin-left: 6em;
+    margin-top: 10em;
+}
+
+.inner_in_1{
+    border: 2px solid rgb(205, 136, 136);
+    height: 15rem;
+    width: 15vw;
+    margin-left: 6em;
+    margin-top: 10em;
+}
+
+.relative_1{
+    position: relative;
+    top: -160px;
+    left: -95px;
+}
+
+.Search{
+    display: block;
+    position: relative;
+    background: burlywood;
+    padding: 0em 12em;
+    position: relative;
+}
+
+
+.search-bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    gap: 10px;
+}
+
+
+.search-bar input {
+    width: 40vw;
+    max-width: 600px;
+    min-width: 200px;
+}
+
+.search-bar .submit{
+    position: absolute;
+}
+
+
+.search-bar .submit i{
+    border-radius: 100%;
+}
+
+
+#pseudo-demo{
+    margin: 5em 10em;
+}
+
+#pseudo-demo h1,p{
+    text-align: center;
+    line-height: 2em;
+}
+
+#pseudo-demo .pseudo-box{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    position: relative;
+    margin: 2em 28em;
+    display: flex;   
+    align-items: center;      
+    justify-content: center;
+}
+
+#pseudo-demo .pseudo-box:hover:before{
+    content: "I am Up in 🚨Hovering";
+    white-space: nowrap;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 18px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+
+#pseudo-demo .pseudo-box:hover:after{
+    content: "I am Down in 🚨Hovering";
+    white-space: wrap;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    height: 18px;
+    background-color: rgb(255, 255, 255);
+    border-top: 2px solid black;
+    text-align: center;
+}
+
+#pseudo-bulletin{
+height: 30vh;
+background-color: aqua;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+
+
+}
+.bulletin-container{
+height: 20vh;
+width: 30vw;
+border: 2px black solid;
+background-color: beige;
+border-radius: 16px;
+
+
+}
+.bulletin-container ul{
+    list-style: none;
+    display: flex;
+    height: 20vh;   
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+
+
+}
+
+
+.bulletin-container ul li{
+    width: 30vw;
+    height: 100%;
+    border:2px black solid;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: nowrap;
+     white-space: nowrap;
+}
+
+.bulletin-container ul li:hover::before{
+    content: "👀";
+}
+
+.bulletin-container ul :first-child{
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+}
+.bulletin-container ul :last-child{
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+.bulletin-container ul li:hover{
+    background-color: rgba(206, 47, 47, 0.46);
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
